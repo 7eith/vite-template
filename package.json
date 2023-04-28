@@ -13,7 +13,7 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint */**/*.{ts,tsx} --fix --max-warnings=0",
     "format": "prettier */**/*.{ts,tsx,js,json} --write",
-    "lint-staged": "lint-staged",
+    "lint-staged": "cross-env FORCE_COLOR=1 lint-staged",
     "prepare": "husky install"
   },
   "dependencies": {
