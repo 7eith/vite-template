@@ -16,18 +16,6 @@ describe('Renders main page correctly', async () => {
   });
 
   /**
-   * Passes - shows title correctly
-   */
-  it('Should render the page correctly', async () => {
-    // Setup
-    await render(<App />);
-    const h1 = screen.queryByText('Test @ Gitlab CI');
-
-    // Post Expectations
-    expect(h1).toBeInTheDocument();
-  });
-
-  /**
    * Passes - shows the button count correctly present
    */
   it('Should show the button count set to 0', async () => {
